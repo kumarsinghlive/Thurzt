@@ -1,0 +1,46 @@
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+    <title>Thurzt</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;800;900&display=swap" rel="stylesheet">
+    <style>
+      body {
+        font-family: 'Inter', sans-serif;
+        background-color: #000000;
+        color: #ffffff;
+        overscroll-behavior-y: none;
+      }
+      /* Hide scrollbar for clean UI */
+      .no-scrollbar::-webkit-scrollbar {
+        display: none;
+      }
+      .no-scrollbar {
+        -ms-overflow-style: none;
+        scrollbar-width: none;
+      }
+
+      @keyframes flame-flicker {
+        0%, 100% { 
+          transform: scale(1); 
+          filter: brightness(100%) drop-shadow(0 0 10px rgba(255, 45, 133, 0.5)); 
+        }
+        50% { 
+          transform: scale(1.03); 
+          filter: brightness(120%) drop-shadow(0 0 20px rgba(98, 205, 255, 0.7)); 
+        }
+      }
+
+      .animate-flame {
+        animation: flame-flicker 2s ease-in-out infinite;
+      }
+    </style>
+  </head>
+  <body>
+    <div id="root"></div>
+  <script type="module" src="/index.tsx"></script>
+</body>
+</html>

@@ -1,0 +1,7 @@
+{
+  "name": "Thurzt BEST",
+  "description": "An intention-based dating platform.",
+  "requestFramePermissions": [
+    "geolocation"
+  ]
+}
